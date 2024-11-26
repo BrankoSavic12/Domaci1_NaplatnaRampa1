@@ -94,7 +94,7 @@ public class NaplatnaRampa extends Thread {
                   
                     Thread.sleep((long) (tsr * (1 + 0.3 * (rand.nextDouble() * 2 - 1)) * 1000));
 
-                    int kategorija = rand.nextInt(3); // Random category 0, 1, 2
+                    int kategorija = rand.nextInt(3);
                     KategorizovanoVozilo vozilo = new KategorizovanoVozilo(kategorija);
                     NaplatnaStanica stanica = stanice.get(rand.nextInt(stanice.size()));
 
